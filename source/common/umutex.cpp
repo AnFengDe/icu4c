@@ -376,7 +376,7 @@ static UMtxAtomicFn  *pIncFn = NULL;
 static UMtxAtomicFn  *pDecFn = NULL;
 static const void *gIncDecContext  = NULL;
 
-#if defined (POSIX) && (U_HAVE_GCC_ATOMICS == 0)
+#if defined (POSIX) && (U_HAVE_GCC_ATOMICS == 0) && (USE_MAC_OS_ATOMIC_INCREMENT == 0)
 static UMutex   gIncDecMutex = U_MUTEX_INITIALIZER;
 #endif
 
