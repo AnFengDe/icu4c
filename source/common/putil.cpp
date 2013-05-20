@@ -1216,7 +1216,7 @@ uprv_pathIsAbsolute(const char *path)
    until some client wrapper makefiles are updated */
 #if U_PLATFORM_IS_DARWIN_BASED && TARGET_IPHONE_SIMULATOR
 # if !defined(ICU_DATA_DIR_PREFIX_ENV_VAR)
-#  define ICU_DATA_DIR_PREFIX_ENV_VAR "IPHONE_SIMULATOR_ROOT"
+//#  define ICU_DATA_DIR_PREFIX_ENV_VAR "IPHONE_SIMULATOR_ROOT"
 # endif
 #endif
 
